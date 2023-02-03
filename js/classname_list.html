@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list/name</title>
+</head>
+<style>
+*{
+    text-transform: uppercase;
+    color: yellow;
+    background-color: blue;
+    font-style: oblique;
+    font-size: 4vh;
+}
+.dusra{
+    color: orange;
+}
+</style>
+<body>
+ 
+    <div id="pehla" class = "kpop">
+       <span class="pop">hello my name is trisha </span> 
+    </div>
+    <div class="dusra">
+        hello i am dusra
+    </div>
+
+</body>
+
+<script>
+
+console.log(pehla.className="dusra kpop")  // this is to set the class name 
+// console.log(pehla.classList)  // displays class name list
+// console.log(pehla.classList.remove("dusra")) // removes 
+// console.log(pehla.classList.add("teeh") )// adds 
+// console.log(pehla.classList)  // to see the new list
+
+// console.log(pehla.classList.toggle("blackpink"))   // toggle between add and remove
+// console.log(pehla.classList.toggle("blackpink"))
+// console.log(pehla.classList.toggle("blackpink"))
+// console.log(pehla.classList.toggle("blackpink"))
+
+localStorage.setItem("emotions","blank");
+localStorage.setItem("emotions","happy");
+localStorage.getItem("emotions");
+
+// localStorage.clear()
+
+sessionStorage.setItem("name", "prachi");
+sessionStorage.removeItem("place", "karnataka")
+
+sessionStorage.getItem("place");
+sessionStorage.clear();
+
+// when local or session storage is changed or updated an storage event is triggered.
+// to see this event ..
+
+window.onstorage=(e)=>{
+
+    console.log(changed)
+}
+
+
+
+</script>
+</html>

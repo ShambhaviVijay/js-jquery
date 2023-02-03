@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            background-color: rgb(18, 18, 193);
+            color: white ;
+        }
+
+        nav {
+
+            background-color: aqua;
+            height: 4.5vh;
+        }
+
+        ul {
+            display: flex;
+
+            list-style: none;
+            height: 25px;
+        }
+
+        li {
+            width: 3vhx;
+            height: 2.5vh;
+            margin: 1vh;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+
+        <ul>
+            <li>HOME</li>
+            <li>ABOUT</li>
+            <li>SEARCH</li>
+            <li>LOGIN</li>
+        </ul>
+    </nav>
+    <span id="hello">HELLO,<b> chomu </b> i am span</span>
+    <span id="h" hidden=""> i hate sigma</span>
+<div class="attcheck" id="atchk2"> yo!
+   <div id="pop" data-name="Trisha" data-age="20">
+    This is a check for attribute
+</div> 
+</div>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    document.getElementsByTagName("nav")[0].firstElementChild.style.background = "black" //this change will be only for a fraction of millisecs.
+    document.getElementsByTagName("nav")[0].firstElementChild.style.color = "blue"
+    document.getElementsByTagName("nav")[0].lastElementChild.style.background = "blue"
+    Array.from(document.getElementsByTagName("li")).forEach((element) => {
+        element.style.background = "yellow";
+    })
+    
+    // console.log shows element as DOM tree 
+    console.dir(document.getElementsByTagName("li")[2]) // console.dir gives output as a java script object 
+    // inner and outer html
+    // we can get and set inner HTML
+   console.log( hello.innerHTML)  // works for id only
+
+   console.log( hello.outerHTML)  // this will include all the element and tags 
+console.log(hello.outerHTML=" <div> HELLO WORLD </div>")
+
+console.log(document.getElementsByTagName("li")[3].firstChild.data)
+console.log(document.getElementsByTagName("li")[2].firstChild.nodeValue)  // data and nodeValue both returns the same result
+console.log(document.getElementsByTagName("li")[2].firstChild.nodeName)   // this gives the result as its type eg. #text#
+console.log(document.getElementsByTagName("nav")[0].firstChild.nodeName)
+// console.log(h.hidden = false)  // using this we can unhide a given text
+// console.log(document.body.textContent)   // this will show entire page details. Can be used to copy a website in terms of text files.
+
+
+
+// working with attributes
+let atchk2 = document.getElementById("atchk2");
+let pop = document.getElementById("pop");
+
+let a = atchk2.hasAttribute("class");  // atchk2 is the class name
+document.writeln(a);  // reurns true because atchk2 has a class
+let b = atchk2.hasAttribute("style");  
+document.writeln(b); // will return false 
+
+let c = pop.getAttribute("id");
+console.log(c)  // the id name will be printed
+// let d = pop.setAttribute("hidden", "true");  // this will hide the content under pop attribute
+pop.setAttribute("class","animal")
+let e = pop.hasAttribute("class")
+console.log(e)  // the class will be added , we cam also add multiple classes
+
+pop.removeAttribute("class","animal")
+let f = pop.hasAttribute("class")
+console.log(f)  // the class will be removed 
+
+// CUSTOME ATTRIBUTES DEMO -----------------------------------------------
+console.log(pop.dataset)   // dataset stores a custom attribute
+console.log(pop.dataset.name)
+console.log(pop.dataset.age)
+
+
+
+
+
+
+
+
+
+</script>
+
+</html>

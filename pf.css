@@ -1,0 +1,78 @@
+.container{
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    
+}
+.section1{
+    height: 100vh;
+    width: 35vh;
+    background-color: rgb(34, 34, 34);
+}
+.section2{
+    height: 100vh;
+    width: 100%;
+    
+}
+.box{
+    color:rgb(193, 185, 185);
+    margin: 1vh;
+
+}
+ li{
+list-style-type: none;
+}
+.name{
+    margin: 40px;
+    
+}
+.boximg{
+    
+    display: flex;
+    margin: 1vh;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 30vh;
+    border: 1px solid white;
+}
+.details{
+       width: 27vh;
+    color: rgb(193, 185, 185);
+
+}
+.prog{
+    display: inline;
+    padding: 3vh;
+}
+.lang{
+    display: flex;
+    margin: 1vh;
+}
+
+progress::-webkit-progress-value{
+    background-color: rgb(248, 222, 119);
+}
+.progress {
+    background-color:  rgb(248, 222, 119);
+}
+.progress2::-webkit-progress-value{
+    background-color: rgb(231, 198, 67);
+}
+.progress2 {
+    background-color:rgb(231, 198, 67) ;
+}
+.prog2{
+    display: inline;
+    padding: 3vh;
+}
+.heading{
+    font-size: 12vh;
+    display: flex;
+    background-color: rgb(86, 84, 84);
+    height: 55vh;
+    justify-content: center;
+    align-items: center;
+    margin: 15vh;
+}

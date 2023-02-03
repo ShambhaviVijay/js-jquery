@@ -1,0 +1,25 @@
+.first{
+    color: blue;
+    background-color: blanchedalmond;
+    height: 100px;   /* px , vh, rem */
+
+}
+.sec1{
+    height: 50vh;
+    background-color: pink;
+    margin: 1vh;
+    width: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text{
+    color: white;
+    text-transform: uppercase;
+    background-color: teal;
+text-align: center;
+}
+.container{
+    display: flex;
+}

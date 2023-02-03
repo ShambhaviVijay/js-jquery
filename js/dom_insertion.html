@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        * {
+            color: yellow;
+            background-color: blue;
+        }
+        div{
+            font-size: 3vh;
+            color: orange;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pehla" class="dusra">
+        hello world!
+    </div>
+</body>
+
+<script>
+    let a = document.getElementsByTagName('div')[0];
+    a.innerHTML = a.innerHTML + "<H1> My name is Trisha </H1>"
+
+
+    // to create an element ---
+    let section = document.createElement('section');
+    section.innerHTML = section.innerHTML + "<H1> append</H1>"
+    //  a.appendChild(section);   // output after my name is ...
+    a.prepend(section)  //  output before  my name is ...and hello worls!
+    
+    
+    
+    let div = document.getElementsByTagName('div');
+    let b = document.getElementsByTagName('div')[0];
+    b.innerHTML = b.innerHTML + "<div> shibal shekkiyaa</div>"
+    b.after(div)
+
+
+
+    // ------- 
+
+    pehla.insertAdjacentHTML('beforeend', '<div class="lol">Beforeend text here </div');
+    pehla.insertAdjacentHTML('beforebegin', '<div class="lol">begining text here </div');
+    pehla.insertAdjacentHTML('afterend', '<div class="lol">afterend text here </div');
+    pehla.insertAdjacentHTML('afterbegin', '<div class="lol">afterbegin text here </div');
+    pehla.insertAdjacentText("beforebegin", " This line is inserted in DOM using .insertAdjacentText")
+
+    //pehla.remove()  // this will remove all the content 
+</script>
+
+</html>
